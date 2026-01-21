@@ -1,6 +1,7 @@
 import discord
 import requests
 import time
+import os
 
 cooldown_alerta = 43200  # 5 minutos
 ultima_alerta = 0
@@ -68,3 +69,4 @@ async def on_message(message):
         await bot.close()
 
 bot.run(TOKEN)
+
