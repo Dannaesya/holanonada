@@ -5,8 +5,8 @@ import time
 cooldown_alerta = 43200  # 5 minutos
 ultima_alerta = 0
 
-TOKEN = "lol"
-WEBHOOK_URL = "https://discord.com/api/webhooks/1463358857261744283/bY4QlYX3E__S0-GFSm1xY6IAZuig_znXKmnMyXs7hs15vTPl7Dl0KY71Wa59zgFzF35K"
+TOKEN = os.getenv("TOKEN")
+WEBHOOK_URL = os.getenv("WEBHOOK_URL")
 
 ROL_ADMIN = 1374518001490989168
 ROL_ALERTA = 1459203442634526873
@@ -66,4 +66,5 @@ async def on_message(message):
 
         await message.channel.send("😴 Chau pibes me fui a ver one piezzZe")
         await bot.close()
+
 bot.run(TOKEN)
