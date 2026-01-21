@@ -10,7 +10,7 @@ TOKEN = os.getenv("TOKEN")
 WEBHOOK_URL = os.getenv("WEBHOOK_URL")
 
 ROL_ADMIN = 1374518001490989168
-ROL_ALERTA = 1459203442634526873
+ROL_ALERTA = 1380536099818176615
 ROL_OWNER = 1229789255874772994
 
 intents = discord.Intents.default()
@@ -69,4 +69,5 @@ async def on_message(message):
         await bot.close()
 
 bot.run(TOKEN)
+
 
